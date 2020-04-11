@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://mskadr.github.io">
-  <title>Archives: 2020/4 | 随笔和记录</title>
+  <title>Square Dance | 随笔和记录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="随笔和记录">
-<meta property="og:url" content="http://mskadr.github.io/archives/2020/04/index.html">
+  <meta name="description" content="题目大意 给定一个R×CR \times CR×C的矩阵表示一个广场，每个位置有一个数字，表示站在这个位置的人的能力。 每个人上下左右最近的，还没有被淘汰的人被视为他的对手，考虑到淘汰情况，对手可能有[0,4][0,4][0,4]个。如果这个人的能力值严格小于他所有对手能力值的平均值，那么这个人就被淘汰了。 每一轮淘汰之后，场上剩下的所有人的能力值之和被视作这一轮的分数。最后总能达到所有人都无法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Square Dance">
+<meta property="og:url" content="http://mskadr.github.io/2020/04/11/Square-Dance/index.html">
 <meta property="og:site_name" content="随笔和记录">
+<meta property="og:description" content="题目大意 给定一个R×CR \times CR×C的矩阵表示一个广场，每个位置有一个数字，表示站在这个位置的人的能力。 每个人上下左右最近的，还没有被淘汰的人被视为他的对手，考虑到淘汰情况，对手可能有[0,4][0,4][0,4]个。如果这个人的能力值严格小于他所有对手能力值的平均值，那么这个人就被淘汰了。 每一轮淘汰之后，场上剩下的所有人的能力值之和被视作这一轮的分数。最后总能达到所有人都无法">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-11T14:11:00.000Z">
+<meta property="article:modified_time" content="2020-04-11T14:36:50.586Z">
 <meta property="article:author" content="MskAdr">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="Google Code Jam">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="随笔和记录" type="application/atom+xml">
@@ -144,36 +150,69 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Square-Dance" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Square Dance
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Square-Dance/" class="archive-article-date">
+
+        
+        <a href="/2020/04/11/Square-Dance/" class="archive-article-date">
   	<time datetime="2020-04-11T14:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Square-Dance/">Square Dance</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>给定一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>×</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">R \times C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>的矩阵表示一个广场，每个位置有一个数字，表示站在这个位置的人的能力。<br />
+每个人上下左右最近的，还没有被淘汰的人被视为他的对手，考虑到淘汰情况，对手可能有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,4]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">]</span></span></span></span>个。如果这个人的能力值严格小于他所有对手能力值的平均值，那么这个人就被淘汰了。<br />
+每一轮淘汰之后，场上剩下的所有人的能力值之和被视作这一轮的分数。最后总能达到所有人都无法被淘汰的情况，我们需要的就是从开始到最后，每一轮分数的总和。<br />
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>×</mo><mi>C</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">R \times C \leq 10^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.13597em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="思路和解法"><a class="markdownIt-Anchor" href="#思路和解法"></a> 思路和解法</h2>
+<p>最直观的想法肯定是直接模拟，如果最后有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>轮，我们的时间复杂度就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>R</mi><mo>×</mo><mi>C</mi><mo>×</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(R \times C \times i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span>。考虑到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>×</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">R \times C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>可以达到一万，是无法满足所有数据的要求的。<br />
+我们重新来考虑每一轮什么样的人会被淘汰，如果一个人第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>轮没被淘汰却在第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>轮被淘汰了，那么说明他的对手肯定发生了改变，换句话说他的对手肯定是被淘汰了。因此我们每一轮只需要判断上一轮被淘汰的人的对手就可以了。<br />
+我们维护一个队列，一旦一个人被淘汰了，我们就把这个人的上下左右的对手加入到这个队列当中，然后每一次从队列当中抽取我们下一个需要判断的对象。<br />
+考虑到每个人最多被淘汰一次，被淘汰一次最多可以送<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>个人进队列，最后的时间复杂度就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>R</mi><mo>×</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(R \times C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span>。<br />
+当然我们需要把判断这个人能否被淘汰的时间复杂度降低到常数级别，因此我们选择十字链表来存储矩阵，这样不管是判断上下左右还是删除都很方便。<br />
+需要注意的是由于淘汰是每一轮结束的时候统一进行，所以不能立即删除，应该在每一轮结束之后删除。而且考虑到每个人可能在同一轮进队多次，有可能造成重复删除，所以我为每个节点加了一个erase标记，在删除的时候只把结点从链表当中断开，在结束的时候统一释放内存。<br />
+因此我们还需要一个数组或者队列，保存我们分配过的所有内存空间，这样在结束的时候能统一释放。这就是我们基础的数据结构了。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;utility&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Matrix</span>&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">        Node *left,*right,*up,*down;</span><br><span class="line">        Node *row,*column;</span><br><span class="line">        <span class="keyword">int</span> rowIndex,colIndex;</span><br><span class="line">        <span class="keyword">int</span> val;</span><br><span class="line">        <span class="keyword">bool</span> check,erase;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// 行、列和头结点</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;Node*&gt; rows;</span><br><span class="line">    <span class="built_in">vector</span>&lt;Node*&gt; columns;</span><br><span class="line">    Node* head;</span><br><span class="line">    <span class="comment">// 矩阵大小</span></span><br><span class="line">    <span class="keyword">int</span> n,m;</span><br><span class="line">    <span class="comment">// 维护中途的分数和最后的结果</span></span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> sum, res;</span><br><span class="line">    <span class="comment">// 待检查的队列</span></span><br><span class="line">    <span class="built_in">queue</span>&lt;pair&lt;<span class="keyword">int</span>,Node*&gt; &gt; checking;</span><br><span class="line">    <span class="comment">// 所有节点存储在这里，析构的时候统一释放内存</span></span><br><span class="line">    <span class="built_in">queue</span>&lt;Node*&gt; allNodes;</span><br><span class="line">    <span class="comment">// 初始化时插入节点</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> val,<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">        Node* nodeptr=<span class="keyword">new</span> Node;</span><br><span class="line">        <span class="comment">// column</span></span><br><span class="line">        nodeptr-&gt;column=columns[y];</span><br><span class="line">        nodeptr-&gt;up=columns[y]-&gt;up;</span><br><span class="line">        nodeptr-&gt;down=columns[y];</span><br><span class="line">        nodeptr-&gt;up-&gt;down=nodeptr;</span><br><span class="line">        columns[y]-&gt;up=nodeptr;</span><br><span class="line">        <span class="comment">// row</span></span><br><span class="line">        nodeptr-&gt;row=rows[x];</span><br><span class="line">        nodeptr-&gt;left=rows[x]-&gt;left;</span><br><span class="line">        nodeptr-&gt;right=rows[x];</span><br><span class="line">        nodeptr-&gt;left-&gt;right=nodeptr;</span><br><span class="line">        rows[x]-&gt;left=nodeptr;</span><br><span class="line">        <span class="comment">// val</span></span><br><span class="line">        nodeptr-&gt;val=val;</span><br><span class="line">        nodeptr-&gt;erase=<span class="literal">false</span>;</span><br><span class="line">        allNodes.push(nodeptr);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 删除节点时只断开链表，不在这里释放内存</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">erase</span><span class="params">(Node* nodeptr)</span></span>&#123;</span><br><span class="line">        nodeptr-&gt;left-&gt;right=nodeptr-&gt;right;</span><br><span class="line">        nodeptr-&gt;right-&gt;left=nodeptr-&gt;left;</span><br><span class="line">        nodeptr-&gt;up-&gt;down=nodeptr-&gt;down;</span><br><span class="line">        nodeptr-&gt;down-&gt;up=nodeptr-&gt;up;</span><br><span class="line">        nodeptr-&gt;erase=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 检查是否会被淘汰</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(Node* nodeptr,<span class="keyword">int</span> round)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> compass,cNum;</span><br><span class="line">        compass=<span class="number">0</span>;</span><br><span class="line">        cNum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(nodeptr-&gt;up!=nodeptr-&gt;column)&#123;</span><br><span class="line">            compass+=nodeptr-&gt;up-&gt;val;</span><br><span class="line">            cNum++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nodeptr-&gt;down!=nodeptr-&gt;column)&#123;</span><br><span class="line">            compass+=nodeptr-&gt;down-&gt;val;</span><br><span class="line">            cNum++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nodeptr-&gt;left!=nodeptr-&gt;row)&#123;</span><br><span class="line">            compass+=nodeptr-&gt;left-&gt;val;</span><br><span class="line">            cNum++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nodeptr-&gt;right!=nodeptr-&gt;row)&#123;</span><br><span class="line">            compass+=nodeptr-&gt;right-&gt;val;</span><br><span class="line">            cNum++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(cNum!=<span class="number">0</span> &amp;&amp; compass&gt;cNum*nodeptr-&gt;val)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nodeptr-&gt;up!=nodeptr-&gt;column)&#123;</span><br><span class="line">                checking.push(make_pair(round+<span class="number">1</span>,nodeptr-&gt;up));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nodeptr-&gt;down!=nodeptr-&gt;column)&#123;</span><br><span class="line">                checking.push(make_pair(round+<span class="number">1</span>,nodeptr-&gt;down));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nodeptr-&gt;left!=nodeptr-&gt;row)&#123;</span><br><span class="line">                checking.push(make_pair(round+<span class="number">1</span>,nodeptr-&gt;left));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nodeptr-&gt;right!=nodeptr-&gt;row)&#123;</span><br><span class="line">                checking.push(make_pair(round+<span class="number">1</span>,nodeptr-&gt;right));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 构造函数，创建行列指针</span></span><br><span class="line">    Matrix(<span class="keyword">int</span> N,<span class="keyword">int</span> M)&#123;</span><br><span class="line">        n=N;</span><br><span class="line">        m=M;</span><br><span class="line">        head = <span class="keyword">new</span> Node;</span><br><span class="line">        head-&gt;up=head;</span><br><span class="line">        head-&gt;down=head;</span><br><span class="line">        head-&gt;left=head;</span><br><span class="line">        head-&gt;right=head;</span><br><span class="line">        head-&gt;column=head;</span><br><span class="line">        head-&gt;row=head;</span><br><span class="line">        head-&gt;colIndex=<span class="number">-1</span>;</span><br><span class="line">        head-&gt;rowIndex=<span class="number">-1</span>;</span><br><span class="line">        rows=<span class="built_in">vector</span>&lt;Node*&gt;(N);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            rows[i] = <span class="keyword">new</span> Node;</span><br><span class="line">            rows[i]-&gt;up = head-&gt;up;</span><br><span class="line">            rows[i]-&gt;down = head;</span><br><span class="line">            rows[i]-&gt;up-&gt;down = rows[i];</span><br><span class="line">            rows[i]-&gt;left = rows[i];</span><br><span class="line">            rows[i]-&gt;right = rows[i];</span><br><span class="line">            rows[i]-&gt;row = rows[i];</span><br><span class="line">            rows[i]-&gt;column = head;</span><br><span class="line">            rows[i]-&gt;rowIndex=i;</span><br><span class="line">            rows[i]-&gt;colIndex=<span class="number">-1</span>;</span><br><span class="line">            head-&gt;up = rows[i];</span><br><span class="line">        &#125;</span><br><span class="line">        columns=<span class="built_in">vector</span>&lt;Node*&gt;(M);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;M;i++)&#123;</span><br><span class="line">            columns[i] = <span class="keyword">new</span> Node;</span><br><span class="line">            columns[i]-&gt;left = head-&gt;left;</span><br><span class="line">            columns[i]-&gt;right = head;</span><br><span class="line">            columns[i]-&gt;left-&gt;right = columns[i];</span><br><span class="line">            columns[i]-&gt;up = columns[i];</span><br><span class="line">            columns[i]-&gt;down = columns[i];</span><br><span class="line">            columns[i]-&gt;column = columns[i];</span><br><span class="line">            columns[i]-&gt;row=head;</span><br><span class="line">            columns[i]-&gt;colIndex=i;</span><br><span class="line">            columns[i]-&gt;rowIndex=<span class="number">-1</span>;</span><br><span class="line">            head-&gt;left = columns[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 析构函数，所有释放内存的动作在这里进行</span></span><br><span class="line">    ~Matrix()&#123;</span><br><span class="line">        <span class="keyword">while</span>(!allNodes.empty())&#123;</span><br><span class="line">            <span class="keyword">delete</span> allNodes.front();</span><br><span class="line">            allNodes.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">delete</span> rows[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</span><br><span class="line">            <span class="keyword">delete</span> columns[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">delete</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 处理结果</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">deal</span><span class="params">()</span></span>&#123;</span><br><span class="line">        sum=<span class="number">0</span>;</span><br><span class="line">        res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> val;</span><br><span class="line">        <span class="comment">// Input;</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;m;j++)&#123;</span><br><span class="line">                <span class="built_in">cin</span> &gt;&gt; val;</span><br><span class="line">                sum+=val;</span><br><span class="line">                push(val,i,j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Check;</span></span><br><span class="line">        res+=sum;</span><br><span class="line">        <span class="comment">// First Round;</span></span><br><span class="line">        <span class="keyword">int</span> compass,cNum;</span><br><span class="line">        Node *nodeptr,*nextptr;</span><br><span class="line">        <span class="comment">// 待删除的结点保存在这里</span></span><br><span class="line">        <span class="built_in">queue</span>&lt;Node*&gt; failed;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            nodeptr=rows[i]-&gt;right;</span><br><span class="line">            <span class="keyword">while</span>(nodeptr!=rows[i])&#123;</span><br><span class="line">                <span class="keyword">if</span>(check(nodeptr,<span class="number">1</span>))&#123;</span><br><span class="line">                    failed.push(nodeptr);</span><br><span class="line">                &#125;</span><br><span class="line">                nodeptr=nodeptr-&gt;right;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> round=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> currentRound;</span><br><span class="line">        <span class="comment">// Next Rounds;</span></span><br><span class="line">        <span class="keyword">while</span>(!checking.empty())&#123;</span><br><span class="line">            currentRound=checking.front().first;</span><br><span class="line">            nodeptr=checking.front().second;</span><br><span class="line">            <span class="keyword">if</span>(currentRound!=round)&#123;</span><br><span class="line">                <span class="keyword">while</span>(!failed.empty())&#123;</span><br><span class="line">                    nextptr=failed.front();</span><br><span class="line">                    failed.pop();</span><br><span class="line">                    <span class="comment">// 防止重复删除</span></span><br><span class="line">                    <span class="keyword">if</span>(nextptr-&gt;erase)&#123;</span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    sum-=nextptr-&gt;val;</span><br><span class="line">                    erase(nextptr);</span><br><span class="line">                &#125;</span><br><span class="line">                round=currentRound;</span><br><span class="line">                res+=sum;</span><br><span class="line">            &#125;</span><br><span class="line">            checking.pop();</span><br><span class="line">            <span class="comment">// 防止队列中出现被删除的结点</span></span><br><span class="line">            <span class="keyword">if</span>(nodeptr-&gt;erase==<span class="literal">true</span>)&#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(check(nodeptr,currentRound))&#123;</span><br><span class="line">                failed.push(nodeptr);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">int</span> N,M;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> result;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=T;x++)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; N &gt;&gt; M;</span><br><span class="line">        <span class="function">Matrix <span class="title">square</span><span class="params">(N,M)</span></span>;</span><br><span class="line">        result = square.deal();</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; x &lt;&lt; <span class="string">": "</span> &lt;&lt; result &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -189,187 +228,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://mskadr.github.io/2020/04/11/Square-Dance/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pascal-Walk/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/11/Pascal-Walk/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Pascal Walk</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pascal-Walk/">Pascal Walk</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pattern-Matching/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pattern-Matching/">Pattern Matching</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/09/Height-All-The-Same/" class="archive-article-date">
-  	<time datetime="2020-04-09T05:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/09/Height-All-The-Same/">Height All The Same</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Codeforces</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/07/Indicium/" class="archive-article-date">
-  	<time datetime="2020-04-07T12:45:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/07/Indicium/">Indicium 拉丁矩阵</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -392,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

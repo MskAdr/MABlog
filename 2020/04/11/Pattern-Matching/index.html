@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://mskadr.github.io">
-  <title>Archives: 2020/4 | 随笔和记录</title>
+  <title>Pattern Matching | 随笔和记录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="随笔和记录">
-<meta property="og:url" content="http://mskadr.github.io/archives/2020/04/index.html">
+  <meta name="description" content="题目大意 给定一系列模式字符串，字符串当中只包含大写英文字母和通配符’*’，给出任意一个字符串，要求这个字符串可以对所有给定的模式字符串完成匹配。 例如：  *COCONUTS *NUTS *ONUTS  给出的解答应该是任意一个以&quot;COCONUTS&quot;结尾的字符串，例如&quot;COCONUTS&quot;，“ILOVECOCONUTS”。 如果找不到这样的字符串，输出’*">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pattern Matching">
+<meta property="og:url" content="http://mskadr.github.io/2020/04/11/Pattern-Matching/index.html">
 <meta property="og:site_name" content="随笔和记录">
+<meta property="og:description" content="题目大意 给定一系列模式字符串，字符串当中只包含大写英文字母和通配符’*’，给出任意一个字符串，要求这个字符串可以对所有给定的模式字符串完成匹配。 例如：  *COCONUTS *NUTS *ONUTS  给出的解答应该是任意一个以&quot;COCONUTS&quot;结尾的字符串，例如&quot;COCONUTS&quot;，“ILOVECOCONUTS”。 如果找不到这样的字符串，输出’*">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-11T13:29:00.000Z">
+<meta property="article:modified_time" content="2020-04-11T13:49:53.939Z">
 <meta property="article:author" content="MskAdr">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="Google Code Jam">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="随笔和记录" type="application/atom+xml">
@@ -144,120 +150,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Pattern-Matching" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Square-Dance/" class="archive-article-date">
-  	<time datetime="2020-04-11T14:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Square-Dance/">Square Dance</a>
+    <h1 class="article-title" itemprop="name">
+      Pattern Matching
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pascal-Walk/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pascal-Walk/">Pascal Walk</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pattern-Matching/" class="archive-article-date">
+        
+        <a href="/2020/04/11/Pattern-Matching/" class="archive-article-date">
   	<time datetime="2020-04-11T13:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pattern-Matching/">Pattern Matching</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>给定一系列模式字符串，字符串当中只包含大写英文字母和通配符’*’，给出任意一个字符串，要求这个字符串可以对所有给定的模式字符串完成匹配。<br />
+例如：</p>
+<blockquote>
+<p>*COCONUTS<br />
+*NUTS<br />
+*ONUTS</p>
+</blockquote>
+<p>给出的解答应该是任意一个以&quot;COCONUTS&quot;结尾的字符串，例如&quot;COCONUTS&quot;，“ILOVECOCONUTS”。<br />
+如果找不到这样的字符串，输出’*’。</p>
+<h2 id="解法"><a class="markdownIt-Anchor" href="#解法"></a> 解法</h2>
+<p>我们首先把给定的字符串分成四类。以通配符’*‘开头，以通配符’*‘结尾，中间含有通配符’*’，以及不含有通配符’*’。<br />
+如果给定的模式字符串里面有一个或者一个以上是不含有通配符的，我们只需要判断这一个字符串和其他的模式字符串能不能匹配即可，具体匹配方法可以参考<a href="https://leetcode-cn.com/problems/wildcard-matching/" target="_blank" rel="noopener">LeetCode-44</a>。<br />
+通过仔细观察，类似’*COCONUTS’，’*NUTS’这样的字符串为我们指定了答案字符串的后缀，而类似’ILOVE*’，‘COCONUTS*‘这样的字符串为我们指定了答案字符串的前缀。最后，类似’*APPLE*‘这样的字符串为我们指定了答案字符串中间应该填充什么。<br />
+我们首先处理前后缀，如果可以找到一个满足要求的前缀，一个满足要求的后缀，那么我们就可以找到答案，反之则不行。寻找前缀可以从头开始比较每一个模式串相应位置的字符，如果模式串相应位置是通配符’*’，那么这个模式串就不用继续参加比较了。处理后缀的时候只需要把所有模式串反转，得到的答案再反转回来即可。<br />
+接下来处理中间部分，我们可以把一个模式串的中间部分提取出来，例如’*APPLE*‘提取出’APPLE’，‘ABC*DEF*GHI’提取出’DEF’。然后把所有提取出来的字符串组合起来，作为答案的中间部分。<br />
+最后的答案应该是这样的：前缀+模式串1的中间部分+模式串2的中间部分+模式串3的中间部分+……+模式串N的中间部分+后缀。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//通配符匹配的判断</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isMatch</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">string</span> p)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>, iStar = <span class="number">-1</span>, jStar = <span class="number">-1</span>, m = s.<span class="built_in">size</span>(), n = p.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">while</span> (i &lt; m) &#123;</span><br><span class="line">        <span class="keyword">if</span> (j &lt; n &amp;&amp; p[j] == <span class="string">'*'</span>) &#123;</span><br><span class="line">            iStar = i;</span><br><span class="line">            jStar = j++;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (iStar &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            i = ++iStar;</span><br><span class="line">            j = jStar + <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (j &lt; n &amp;&amp; p[j] == <span class="string">'*'</span>) ++j;</span><br><span class="line">    <span class="keyword">return</span> j == n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取前缀和后缀</span></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">getPrefix</span><span class="params">(<span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;&amp; patterns)</span></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">size_t</span> N=patterns.<span class="built_in">size</span>();</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">pos</span><span class="params">(N,<span class="number">0</span>)</span></span>;</span><br><span class="line">    <span class="keyword">char</span> ch=<span class="string">'b'</span>;</span><br><span class="line">    <span class="keyword">bool</span> finish=<span class="literal">false</span>;</span><br><span class="line">    <span class="built_in">string</span> result=<span class="string">""</span>;</span><br><span class="line">    <span class="keyword">while</span> (ch!=<span class="string">'s'</span>)&#123;</span><br><span class="line">        finish=<span class="literal">true</span>;</span><br><span class="line">        ch=<span class="string">'s'</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(patterns[i][pos[i]]==<span class="string">'*'</span>)&#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            finish=<span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span>(ch==<span class="string">'s'</span>)&#123;</span><br><span class="line">                ch=patterns[i][pos[i]];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(ch!=patterns[i][pos[i]])&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">"Fail"</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            pos[i]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(ch!=<span class="string">'s'</span>)</span><br><span class="line">            result+=ch;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//消去前缀和后缀</span></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">removePrefix</span><span class="params">(<span class="built_in">string</span> pattern)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pos=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(;pos&lt;pattern.<span class="built_in">size</span>();pos++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(pattern[pos]==<span class="string">'*'</span>)&#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> pattern.substr(pos);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取中间部分</span></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">getMiddle</span><span class="params">(<span class="built_in">string</span> pattern)</span></span>&#123;</span><br><span class="line">    pattern=removePrefix(pattern);</span><br><span class="line">    reverse(pattern.<span class="built_in">begin</span>(),pattern.<span class="built_in">end</span>());</span><br><span class="line">    pattern=removePrefix(pattern);</span><br><span class="line">    reverse(pattern.<span class="built_in">begin</span>(),pattern.<span class="built_in">end</span>());</span><br><span class="line">    <span class="built_in">string</span> result;</span><br><span class="line">    <span class="keyword">int</span> pos=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;pattern.length();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(pattern[i]!=<span class="string">'*'</span>)&#123;</span><br><span class="line">            result.push_back(pattern[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">int</span> N;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; <span class="title">patterns</span><span class="params">(<span class="number">50</span>,<span class="built_in">string</span>(<span class="number">100</span>,<span class="string">'A'</span>))</span></span>;</span><br><span class="line">    <span class="built_in">string</span> pattern;</span><br><span class="line">    <span class="built_in">string</span> prefix;</span><br><span class="line">    <span class="built_in">string</span> suffix;</span><br><span class="line">    <span class="built_in">string</span> result;</span><br><span class="line">    <span class="built_in">string</span> strict;</span><br><span class="line">    <span class="keyword">bool</span> fail;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=T;x++)&#123;</span><br><span class="line">        patterns.<span class="built_in">clear</span>();</span><br><span class="line">        <span class="comment">// 如果有不包含通配符的字符串，就放进strict里面</span></span><br><span class="line">        strict=<span class="string">""</span>;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">        fail=<span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; pattern;</span><br><span class="line">            patterns.push_back(pattern);</span><br><span class="line">            <span class="keyword">if</span>(pattern.<span class="built_in">find</span>(<span class="string">'*'</span>)==<span class="built_in">string</span>::npos)&#123;</span><br><span class="line">                <span class="keyword">if</span>(strict == <span class="string">""</span>)&#123;</span><br><span class="line">                    strict=pattern;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(strict!=pattern)&#123;</span><br><span class="line">                    fail=<span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; x &lt;&lt; <span class="string">": "</span>;</span><br><span class="line">        <span class="keyword">if</span>(fail)&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"*\n"</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 判断strict能否匹配其他的模式串</span></span><br><span class="line">        <span class="keyword">if</span>(strict!=<span class="string">""</span>)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(!isMatch(strict,patterns[i]))&#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; <span class="string">"*\n"</span>;</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 处理后缀</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            reverse(patterns[i].<span class="built_in">begin</span>(),patterns[i].<span class="built_in">end</span>());</span><br><span class="line">        &#125;</span><br><span class="line">        suffix = getPrefix(patterns);</span><br><span class="line">        <span class="keyword">if</span>(suffix==<span class="string">"Fail"</span>)&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"*\n"</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(suffix.<span class="built_in">begin</span>(),suffix.<span class="built_in">end</span>());</span><br><span class="line">        <span class="comment">// 处理前缀</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            reverse(patterns[i].<span class="built_in">begin</span>(),patterns[i].<span class="built_in">end</span>());</span><br><span class="line">        &#125;</span><br><span class="line">        prefix = getPrefix(patterns);</span><br><span class="line">        <span class="keyword">if</span>(prefix==<span class="string">"Fail"</span>)&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"*\n"</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 处理中间部分</span></span><br><span class="line">        result=prefix;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            result+=getMiddle(patterns[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        result+=suffix;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; result &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -273,103 +232,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://mskadr.github.io/2020/04/11/Pattern-Matching/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/09/Height-All-The-Same/" class="archive-article-date">
-  	<time datetime="2020-04-09T05:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/04/11/Pascal-Walk/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Pascal Walk
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/09/Height-All-The-Same/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Height All The Same</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/09/Height-All-The-Same/">Height All The Same</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Codeforces</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/07/Indicium/" class="archive-article-date">
-  	<time datetime="2020-04-07T12:45:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/07/Indicium/">Indicium 拉丁矩阵</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -392,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
