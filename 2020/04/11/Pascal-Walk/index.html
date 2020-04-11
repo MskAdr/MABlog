@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="随笔和记录">
 <meta property="og:description" content="题目大意 从杨辉三角的最上方开始，每次只能向左，右，左上，右上，左下，右下六个方向其中的一个方向移动（六边形的相邻位置）。  给定数字NNN，要求走过的数字之和为N，不能重复走之前到达过的位置，最长不得超过500步。 其中N≤109N\leq 10^9N≤109  碰过的坑和解法 最容易想到的方法是从最左边开始，沿着最左边的一串111一直走下去，可惜因为步数限制，这种方法只能适用于N≤501N">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://bkimg.cdn.bcebos.com/pic/7e3e6709c93d70cf89a39cd7f2dcd100bba12b8a?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U5Mg==,xp_5,yp_5">
+<meta property="og:image" content="http://5b0988e595225.cdn.sohucs.com/images/20180910/530a378f714944c5a61351ca460e2745.gif">
 <meta property="article:published_time" content="2020-04-11T13:50:00.000Z">
-<meta property="article:modified_time" content="2020-04-11T14:18:25.321Z">
+<meta property="article:modified_time" content="2020-04-11T14:43:24.319Z">
 <meta property="article:author" content="MskAdr">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="Google Code Jam">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://bkimg.cdn.bcebos.com/pic/7e3e6709c93d70cf89a39cd7f2dcd100bba12b8a?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U5Mg==,xp_5,yp_5">
+<meta name="twitter:image" content="http://5b0988e595225.cdn.sohucs.com/images/20180910/530a378f714944c5a61351ca460e2745.gif">
   
     <link rel="alternative" href="/atom.xml" title="随笔和记录" type="application/atom+xml">
   
@@ -174,7 +174,7 @@
       
         <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
 <p>从杨辉三角的最上方开始，每次只能向左，右，左上，右上，左下，右下六个方向其中的一个方向移动（六边形的相邻位置）。<br />
-<img src="https://bkimg.cdn.bcebos.com/pic/7e3e6709c93d70cf89a39cd7f2dcd100bba12b8a?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U5Mg==,xp_5,yp_5" alt="" /><br />
+<img src="http://5b0988e595225.cdn.sohucs.com/images/20180910/530a378f714944c5a61351ca460e2745.gif" alt="" /><br />
 给定数字<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>，要求走过的数字之和为N，不能重复走之前到达过的位置，最长不得超过500步。<br />
 其中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow><annotation encoding="application/x-tex">N\leq 10^9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.13597em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span></span></p>
 <h2 id="碰过的坑和解法"><a class="markdownIt-Anchor" href="#碰过的坑和解法"></a> 碰过的坑和解法</h2>
