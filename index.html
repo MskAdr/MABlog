@@ -146,6 +146,266 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Join-the-Ranks" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/Join-the-Ranks/">Join the Ranks</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/28/Join-the-Ranks/" class="archive-article-date">
+  	<time datetime="2020-04-28T03:35:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>有一副牌共有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>×</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">R \times S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span>张，每张牌有两个值，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn><mo>…</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r=1…R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mo>=</mo><mn>1</mn><mo>…</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s=1…S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span>，洗牌的操作是从牌堆顶拿起<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>张牌被称为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>垛，紧接着再拿起<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>张牌被称为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>垛，整体交换两垛的位置。<br />
+起始状态是从顶到底先按<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>升序，再按<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>升序，要求经过最少次洗牌变成按<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>升序，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>的排序我们不用在意。<br />
+输出操作过程（即<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>）</p>
+<h2 id="解法"><a class="markdownIt-Anchor" href="#解法"></a> 解法</h2>
+<p>考虑到每次洗牌，我们最多只能改变两组相邻关系，也就是让<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>垛的第一张和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>垛的最后一张相邻，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>垛的最后一张和剩下没被拿起来的牌的第一张相邻。<br />
+可以想象到最优解应该是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>R</mi><mo>×</mo><mo stretchy="false">(</mo><mi>S</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{R \times (S-1)}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.355em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span><span class="mbin mtight">×</span><span class="mopen mtight">(</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>(向上取整)次。<br />
+在大脑模拟之后直接暴力贪心构造这个结就可以，另外既然我们不关心<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>，在存储状态的时候也没必要保留<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,R,S;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=T;x++)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; R &gt;&gt; S;</span><br><span class="line">        <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">cards</span><span class="params">(R*S)</span></span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; x &lt;&lt; <span class="string">": "</span> &lt;&lt; (R*S-R+<span class="number">1</span>)/<span class="number">2</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;R*S;i++)&#123;</span><br><span class="line">            cards[i]=i%R+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> opt=<span class="number">0</span>;opt&lt;(R*S-R+<span class="number">1</span>)/<span class="number">2</span>;opt++)&#123;</span><br><span class="line">            <span class="keyword">int</span> A=<span class="number">0</span>,B=R*S<span class="number">-1</span>;</span><br><span class="line">            <span class="keyword">int</span> first=cards[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">int</span> second=cards[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">while</span>(second==first)&#123;</span><br><span class="line">                A++;</span><br><span class="line">                second=cards[A];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(opt == (R*S-R+<span class="number">1</span>)/<span class="number">2</span><span class="number">-1</span> &amp;&amp; (R*S-R)%<span class="number">2</span>==<span class="number">1</span>)&#123;</span><br><span class="line">                second=first;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span>(second==cards[A])&#123;</span><br><span class="line">                A++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span>(second!=cards[B])&#123;</span><br><span class="line">                B--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span>(second==cards[B])&#123;</span><br><span class="line">                B--;</span><br><span class="line">            &#125;</span><br><span class="line">            B++;</span><br><span class="line">            <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">oldCards</span><span class="params">(cards)</span></span>;</span><br><span class="line">            cards.<span class="built_in">clear</span>();</span><br><span class="line">            cards.insert(cards.<span class="built_in">end</span>(),oldCards.<span class="built_in">begin</span>()+A,oldCards.<span class="built_in">begin</span>()+B);</span><br><span class="line">            cards.insert(cards.<span class="built_in">end</span>(),oldCards.<span class="built_in">begin</span>(),oldCards.<span class="built_in">begin</span>()+A);</span><br><span class="line">            cards.insert(cards.<span class="built_in">end</span>(),oldCards.<span class="built_in">begin</span>()+B,oldCards.<span class="built_in">end</span>());</span><br><span class="line">            B-=A;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; A &lt;&lt; <span class="string">" "</span> &lt;&lt; B &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/28/Join-the-Ranks/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Blindfolded-Bullseye" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/Blindfolded-Bullseye/">Blindfolded Bullseye</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/28/Blindfolded-Bullseye/" class="archive-article-date">
+  	<time datetime="2020-04-28T03:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>一个平面上有一个圆，每次输出一个坐标，获得这个坐标在不在圆内的信息，最后给出这个圆的圆心。<br />
+不能输出超过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>300</mn></mrow><annotation encoding="application/x-tex">300</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">0</span><span class="mord">0</span></span></span></span>次</p>
+<h2 id="解法"><a class="markdownIt-Anchor" href="#解法"></a> 解法</h2>
+<p>很简单的方法是找到这个圆的不平行的两条弦，然后圆心就在这两条弦的中垂线交点上。<br />
+再加上给定的是二维平面坐标系，很明显这两条线用平行和垂直与<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>轴的两条弦最合适。<br />
+问题就是如何找出两条弦，实际上相当于在形如<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>00</mn><mo>…</mo><mn>0011</mn><mo>…</mo><mn>1100</mn><mo>…</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">00…0011…1100…00</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">1</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span></span></span></span>这样的数组中怎么找出开头的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>和结尾的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。<br />
+很简单的方法就是用二分查找。<br />
+最后我们需要考虑到因为所有查询的坐标都是整数，所以中垂线不是确定的，我们只能得到一个圆心的大致范围，需要在圆心附近暴力匹配一下。<br />
+我在比赛当中就是因为暴力匹配的范围小了一些，没能通过全部数据，非常遗憾。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> i64;</span><br><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">"blind.txt"</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> i64 <span class="title">findPos</span><span class="params">(<span class="keyword">bool</span> isX,i64 l,i64 r,i64 fix,<span class="keyword">bool</span> front)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 二分查找，isX表示横纵轴，fix表示另一个轴的坐标，front表示查找的是弦的起点还是终点</span></span><br><span class="line">    <span class="built_in">string</span> status;</span><br><span class="line">    i64 mid;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">        mid=(l+r)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(isX)&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; mid &lt;&lt; <span class="string">" "</span> &lt;&lt; fix &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; fix &lt;&lt; <span class="string">" "</span> &lt;&lt; mid &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">        <span class="keyword">if</span>(status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"HIT"</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(front)&#123;</span><br><span class="line">                r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                l=mid+<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"MISS"</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(front)&#123;</span><br><span class="line">                l=mid+<span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,A,B;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T &gt;&gt; A &gt;&gt; B;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;T;x++)&#123;</span><br><span class="line">        <span class="built_in">string</span> status;</span><br><span class="line">        <span class="keyword">bool</span> center = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">bool</span> in = <span class="literal">false</span>;</span><br><span class="line">        i64 inX,inY;</span><br><span class="line">        <span class="comment">// 首先找出来一个在圆内的点，作为搜索的基准</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> posX=<span class="number">-1</span>;posX&lt;=<span class="number">1</span>;posX++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> posY=<span class="number">-1</span>;posY&lt;=<span class="number">1</span>;posY++)&#123;</span><br><span class="line">                inX = posX*<span class="number">5e8</span>;</span><br><span class="line">                inY = posY*<span class="number">5e8</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; inX &lt;&lt; <span class="string">" "</span> &lt;&lt; inY &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">                <span class="keyword">if</span>(status==<span class="string">"HIT"</span>)&#123;</span><br><span class="line">                    in=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">                    center=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(in || center)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(center)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        <span class="comment">// 与x轴平行的弦和圆心的x坐标</span></span><br><span class="line">        i64 cXl=findPos(<span class="literal">true</span>,<span class="number">-1e9</span>,inX,inY,<span class="literal">true</span>);</span><br><span class="line">        <span class="keyword">if</span>(cXl==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cXr=findPos(<span class="literal">true</span>,inX,<span class="number">1e9</span>,inY,<span class="literal">false</span>);</span><br><span class="line">        <span class="keyword">if</span>(cXr==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cX=(cXl+cXr)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 与y轴平行的弦和圆心的y坐标</span></span><br><span class="line">        i64 cYl=findPos(<span class="literal">false</span>,<span class="number">-1e9</span>,inY,cX,<span class="literal">true</span>);</span><br><span class="line">        <span class="keyword">if</span>(cYl==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cYr=findPos(<span class="literal">false</span>,inY,<span class="number">1e9</span>,cX,<span class="literal">false</span>);</span><br><span class="line">        <span class="keyword">if</span>(cYr==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cY=(cYl+cYr)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 在搜索出来的坐标附近暴力匹配</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> posX=cX<span class="number">-4</span>;posX&lt;=cX+<span class="number">4</span>;posX++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> posY=cY<span class="number">-4</span>;posY&lt;cY+<span class="number">4</span>;posY++)&#123;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; posX &lt;&lt; <span class="string">" "</span> &lt;&lt; posY &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">                <span class="keyword">if</span> (status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">                    center=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"WRONG"</span>) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(center)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(!center)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/28/Blindfolded-Bullseye/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Expogo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/Expogo/">Expogo</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/28/Expogo/" class="archive-article-date">
+  	<time datetime="2020-04-28T03:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>面积无限的平面上给定一个坐标，第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>次跳跃的距离是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{k-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>，用NSEW表示跳跃的方向，给出最短的跳跃路径，如果不可达，输出IMPOSSIBLE</p>
+<h2 id="解法"><a class="markdownIt-Anchor" href="#解法"></a> 解法</h2>
+<p>关键是考虑什么情况下这个坐标是不可达的，我们注意到第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>次跳跃的跳跃距离是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，其他时刻的距离都是偶数。<br />
+我们必须跳跃一次距离<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，也只能跳跃一次距离<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，答案就很明显了，横纵坐标奇偶性不同的情况下才能满足我们的需要。<br />
+我们跳跃一次之后，再看剩余的距离，第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>次跳跃完，二进制从左到右第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>位的奇偶性都应该是不同的。<br />
+由此就得出了我们需要的答案。<br />
+考虑到可以取负数，处理时需要小心使用位运算。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> i64=<span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">getPath</span><span class="params">(i64 x,i64 y)</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> result;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">0</span> &amp;&amp; y==<span class="number">0</span>)&#123; <span class="keyword">return</span> <span class="string">""</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">1</span> &amp;&amp; y==<span class="number">0</span>)&#123; <span class="keyword">return</span> <span class="string">"E"</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">-1</span> &amp;&amp; y==<span class="number">0</span>)&#123; <span class="keyword">return</span> <span class="string">"W"</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">0</span> &amp;&amp; y==<span class="number">1</span>)&#123; <span class="keyword">return</span> <span class="string">"N"</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">0</span> &amp;&amp; y==<span class="number">-1</span>)&#123; <span class="keyword">return</span> <span class="string">"S"</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">abs</span>(x%<span class="number">2</span>)==<span class="built_in">abs</span>(y%<span class="number">2</span>))&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"IMPOSSIBLE"</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">abs</span>(x%<span class="number">2</span>)) &#123;</span><br><span class="line">        <span class="comment">// east</span></span><br><span class="line">        result=getPath((x<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>,y&gt;&gt;<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(result!=<span class="string">"IMPOSSIBLE"</span>)&#123; <span class="keyword">return</span> <span class="string">"E"</span>+result; &#125;</span><br><span class="line">        <span class="comment">// west</span></span><br><span class="line">        result=getPath((x+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>,y&gt;&gt;<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(result!=<span class="string">"IMPOSSIBLE"</span>)&#123; <span class="keyword">return</span> <span class="string">"W"</span>+result; &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">abs</span>(y%<span class="number">2</span>)) &#123;</span><br><span class="line">        <span class="comment">// north</span></span><br><span class="line">        result=getPath(x&gt;&gt;<span class="number">1</span>,(y<span class="number">-1</span>)&gt;&gt;<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(result!=<span class="string">"IMPOSSIBLE"</span>)&#123; <span class="keyword">return</span> <span class="string">"N"</span>+result; &#125;</span><br><span class="line">        <span class="comment">// south</span></span><br><span class="line">        result=getPath((x+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>,(y+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(result!=<span class="string">"IMPOSSIBLE"</span>)&#123; <span class="keyword">return</span> <span class="string">"S"</span>+result; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"IMPOSSIBLE"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,X,Y;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=T;x++)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; X &gt;&gt; Y;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; x &lt;&lt; <span class="string">": "</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; getPath(X,Y) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/28/Expogo/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Code-Jam-Round-1B总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

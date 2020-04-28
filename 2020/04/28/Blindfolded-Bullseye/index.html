@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://mskadr.github.io">
-  <title>Tag: 算法 | 随笔和记录</title>
+  <title>Blindfolded Bullseye | 随笔和记录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="随笔和记录">
-<meta property="og:url" content="http://mskadr.github.io/tags/%E7%AE%97%E6%B3%95/index.html">
+  <meta name="description" content="题目大意 一个平面上有一个圆，每次输出一个坐标，获得这个坐标在不在圆内的信息，最后给出这个圆的圆心。 不能输出超过300300300次  解法 很简单的方法是找到这个圆的不平行的两条弦，然后圆心就在这两条弦的中垂线交点上。 再加上给定的是二维平面坐标系，很明显这两条线用平行和垂直与xxx轴的两条弦最合适。 问题就是如何找出两条弦，实际上相当于在形如00…0011…1100…0000…0011…1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blindfolded Bullseye">
+<meta property="og:url" content="http://mskadr.github.io/2020/04/28/Blindfolded-Bullseye/index.html">
 <meta property="og:site_name" content="随笔和记录">
+<meta property="og:description" content="题目大意 一个平面上有一个圆，每次输出一个坐标，获得这个坐标在不在圆内的信息，最后给出这个圆的圆心。 不能输出超过300300300次  解法 很简单的方法是找到这个圆的不平行的两条弦，然后圆心就在这两条弦的中垂线交点上。 再加上给定的是二维平面坐标系，很明显这两条线用平行和垂直与xxx轴的两条弦最合适。 问题就是如何找出两条弦，实际上相当于在形如00…0011…1100…0000…0011…1">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-28T03:20:00.000Z">
+<meta property="article:modified_time" content="2020-04-28T03:48:15.648Z">
 <meta property="article:author" content="MskAdr">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="Google Code Jam">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="随笔和记录" type="application/atom+xml">
@@ -144,78 +150,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Blindfolded-Bullseye" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/28/Join-the-Ranks/" class="archive-article-date">
-  	<time datetime="2020-04-28T03:35:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/28/Join-the-Ranks/">Join the Ranks</a>
+    <h1 class="article-title" itemprop="name">
+      Blindfolded Bullseye
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/28/Blindfolded-Bullseye/" class="archive-article-date">
+        
+        <a href="/2020/04/28/Blindfolded-Bullseye/" class="archive-article-date">
   	<time datetime="2020-04-28T03:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/28/Blindfolded-Bullseye/">Blindfolded Bullseye</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h2>
+<p>一个平面上有一个圆，每次输出一个坐标，获得这个坐标在不在圆内的信息，最后给出这个圆的圆心。<br />
+不能输出超过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>300</mn></mrow><annotation encoding="application/x-tex">300</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">0</span><span class="mord">0</span></span></span></span>次</p>
+<h2 id="解法"><a class="markdownIt-Anchor" href="#解法"></a> 解法</h2>
+<p>很简单的方法是找到这个圆的不平行的两条弦，然后圆心就在这两条弦的中垂线交点上。<br />
+再加上给定的是二维平面坐标系，很明显这两条线用平行和垂直与<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>轴的两条弦最合适。<br />
+问题就是如何找出两条弦，实际上相当于在形如<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>00</mn><mo>…</mo><mn>0011</mn><mo>…</mo><mn>1100</mn><mo>…</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">00…0011…1100…00</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">1</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span></span></span></span>这样的数组中怎么找出开头的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>和结尾的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。<br />
+很简单的方法就是用二分查找。<br />
+最后我们需要考虑到因为所有查询的坐标都是整数，所以中垂线不是确定的，我们只能得到一个圆心的大致范围，需要在圆心附近暴力匹配一下。<br />
+我在比赛当中就是因为暴力匹配的范围小了一些，没能通过全部数据，非常遗憾。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> i64;</span><br><span class="line"><span class="function">ofstream <span class="title">fout</span><span class="params">(<span class="string">"blind.txt"</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> i64 <span class="title">findPos</span><span class="params">(<span class="keyword">bool</span> isX,i64 l,i64 r,i64 fix,<span class="keyword">bool</span> front)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 二分查找，isX表示横纵轴，fix表示另一个轴的坐标，front表示查找的是弦的起点还是终点</span></span><br><span class="line">    <span class="built_in">string</span> status;</span><br><span class="line">    i64 mid;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">        mid=(l+r)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(isX)&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; mid &lt;&lt; <span class="string">" "</span> &lt;&lt; fix &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; fix &lt;&lt; <span class="string">" "</span> &lt;&lt; mid &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">        <span class="keyword">if</span>(status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"HIT"</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(front)&#123;</span><br><span class="line">                r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                l=mid+<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"MISS"</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(front)&#123;</span><br><span class="line">                l=mid+<span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,A,B;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T &gt;&gt; A &gt;&gt; B;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>;x&lt;T;x++)&#123;</span><br><span class="line">        <span class="built_in">string</span> status;</span><br><span class="line">        <span class="keyword">bool</span> center = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">bool</span> in = <span class="literal">false</span>;</span><br><span class="line">        i64 inX,inY;</span><br><span class="line">        <span class="comment">// 首先找出来一个在圆内的点，作为搜索的基准</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> posX=<span class="number">-1</span>;posX&lt;=<span class="number">1</span>;posX++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> posY=<span class="number">-1</span>;posY&lt;=<span class="number">1</span>;posY++)&#123;</span><br><span class="line">                inX = posX*<span class="number">5e8</span>;</span><br><span class="line">                inY = posY*<span class="number">5e8</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; inX &lt;&lt; <span class="string">" "</span> &lt;&lt; inY &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">                <span class="keyword">if</span>(status==<span class="string">"HIT"</span>)&#123;</span><br><span class="line">                    in=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">                    center=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(in || center)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(center)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        <span class="comment">// 与x轴平行的弦和圆心的x坐标</span></span><br><span class="line">        i64 cXl=findPos(<span class="literal">true</span>,<span class="number">-1e9</span>,inX,inY,<span class="literal">true</span>);</span><br><span class="line">        <span class="keyword">if</span>(cXl==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cXr=findPos(<span class="literal">true</span>,inX,<span class="number">1e9</span>,inY,<span class="literal">false</span>);</span><br><span class="line">        <span class="keyword">if</span>(cXr==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cX=(cXl+cXr)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 与y轴平行的弦和圆心的y坐标</span></span><br><span class="line">        i64 cYl=findPos(<span class="literal">false</span>,<span class="number">-1e9</span>,inY,cX,<span class="literal">true</span>);</span><br><span class="line">        <span class="keyword">if</span>(cYl==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cYr=findPos(<span class="literal">false</span>,inY,<span class="number">1e9</span>,cX,<span class="literal">false</span>);</span><br><span class="line">        <span class="keyword">if</span>(cYr==<span class="number">-1</span>)&#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">        i64 cY=(cYl+cYr)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 在搜索出来的坐标附近暴力匹配</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> posX=cX<span class="number">-4</span>;posX&lt;=cX+<span class="number">4</span>;posX++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> posY=cY<span class="number">-4</span>;posY&lt;cY+<span class="number">4</span>;posY++)&#123;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; posX &lt;&lt; <span class="string">" "</span> &lt;&lt; posY &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cin</span> &gt;&gt; status;</span><br><span class="line">                <span class="keyword">if</span> (status==<span class="string">"CENTER"</span>)&#123;</span><br><span class="line">                    center=<span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (status==<span class="string">"WRONG"</span>) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(center)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(!center)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -231,271 +225,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://mskadr.github.io/2020/04/28/Blindfolded-Bullseye/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/28/Expogo/" class="archive-article-date">
-  	<time datetime="2020-04-28T03:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-28</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/04/28/Join-the-Ranks/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Join the Ranks
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/28/Expogo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Expogo</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/28/Expogo/">Expogo</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Square-Dance/" class="archive-article-date">
-  	<time datetime="2020-04-11T14:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Square-Dance/">Square Dance</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pascal-Walk/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pascal-Walk/">Pascal Walk</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Pattern-Matching/" class="archive-article-date">
-  	<time datetime="2020-04-11T13:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Pattern-Matching/">Pattern Matching</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/09/Height-All-The-Same/" class="archive-article-date">
-  	<time datetime="2020-04-09T05:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/09/Height-All-The-Same/">Height All The Same</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Codeforces</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/07/Indicium/" class="archive-article-date">
-  	<time datetime="2020-04-07T12:45:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/07/Indicium/">Indicium 拉丁矩阵</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Google Code Jam</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -518,9 +356,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
